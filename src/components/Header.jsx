@@ -1,10 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <div className="flex justify-center gap-5 text-2xl">
-        <a href="/">Home</a>
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active" : "")}
